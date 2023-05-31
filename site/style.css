@@ -1,0 +1,169 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#barra{
+    background: #4c007d;
+}
+#logo{
+    margin-top: 6px;
+    margin-left: 20px;
+    width: 70px;
+    float: left;
+}
+#logout{
+    margin: 10px;
+    width: 30px;
+    float: right;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 50px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #1b004b;
+  }
+  .btn {
+    text-decoration: none;
+    width: 80px;
+  }
+  .assunto{
+    margin: 10px;
+    font-size: 30px;
+  }
+  #tsup{
+    float: right;
+    border-collapse: separate; 
+    border-spacing: 10px;
+    margin: 0 0 0 10px;
+  }
+  #tabela{
+    margin-top: 20px;
+    overflow-x: hidden;
+  }
+  #btn_mobile{
+    display: none;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #btn_mobile{
+      position: absolute;
+      float: right;
+      margin-left: 80%;
+      margin-top: 25px;
+      display: block;
+      background: #4c007d;
+      color: white;
+      border: none;
+    }
+    #barra{
+        background: #4c007d;
+        height: 70px;
+    }
+    #logo{
+        margin-top: 15px;
+        margin-left: 5px;
+        width: 80px;
+        float: left;
+    }
+    #barrinha{
+      display: block;
+      position: absolute;
+      width: 100%;
+      top: 10px;
+      right: 0px;
+      background: #4c007d;
+      height: 0px;
+      transition: .6s;
+      z-index: 1000;
+      visibility: hidden;
+      overflow-y: hidden;
+    }
+    #barra.active #barrinha{
+      display: block;
+      height: calc(100vh - 10px);
+      visibility: visible;
+      overflow-y: auto;
+
+    }
+    #barrinha li{
+      float: left;
+      display: block;
+      width: 100%;
+      margin: 10px;
+    }
+    #barrinha a{
+      padding: 1rem 0;
+      margin: 0 1rem;
+    }
+    #logout{
+      float: left;
+      margin-left: 20%;
+    }
+    .container-fluid{
+      overflow-x: auto;
+    }
+    #columnchart_values{
+      max-width: 100%;
+      margin-left: -45px;
+      overflow-x: auto;
+    }
+    #tsup{
+      border-collapse: separate; 
+      border-spacing: 10px;
+      margin: 0 0 0 10px;
+    }
+    #tinf{
+      border-collapse: collapse;
+      background: white;
+      color: black;
+    }
+    #tinf tbody tr:nth-of-type(2n){
+      background: whitesmoke;
+    }
+    thead{
+      margin-left: -100px;
+      text-align: left;
+    }
+
+    #cabecalho{
+      display: none;
+    }
+
+    #tab td{
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 15ch auto;
+      padding: 0.3rem 1rem;
+    }
+    #tab td:first-child{
+      padding-top: 2rem;
+    }
+    #tab td:last-child{
+      padding-bottom: 2rem;
+    }
+    #tab td::before{
+      content: attr(data-cell) " ";
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+  }
