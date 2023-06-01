@@ -43,19 +43,20 @@
         <h4 class="assunto">Clientes</h4>
         <table id="tsup">
             <tr>
-                <td><a class="btn btn-primary" style="border-radius: 30px;" href="../cad/cad_cli.php" role="button">Novo +</a></td>
+                <td><a class="btn btn-primary" style="border-radius: 30px;" href="../cad/cad_cli.php" role="button">Novo
+                        +</a></td>
                 <td></td>
                 <td></td>
                 <td>
                     <form action="">
-                <td>
-                    <input class="form-control me-2" name="busca" id="busca" placeholder="Pesquisa" type="text">
-                </td>
-                <td>
-                    <button style="display: flex; background: transparent; border: none;" class="btn btn-primary"
-                        type="submit"><img src="../images/search.png" alt="" srcset=""></button>
-                </td>
-                </form>
+                        <td>
+                            <input class="form-control me-2" name="busca" id="busca" placeholder="Pesquisa" type="text">
+                        </td>
+                        <td>
+                            <button style="display: flex; background: transparent; border: none;" class="btn btn-primary"
+                                type="submit"><img src="../images/search.png" alt="" srcset=""></button>
+                        </td>
+                    </form>
                 </td>
             </tr>
         </table>

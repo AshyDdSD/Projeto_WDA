@@ -46,12 +46,12 @@
                 <td></td>
                 <td>      
                     <form action="">
-                    <td>
-                    <input class="form-control me-2"  name="busca" placeholder="Pesquisa" type="text">
-                    </td>
-                    <td>
-                    <button style="display: flex; background: transparent; border: none;" class="btn btn-primary"  type="submit"><img src="../images/search.png" alt="" srcset=""></button>
-                    </td>
+                        <td>
+                            <input class="form-control me-2"  name="busca" placeholder="Pesquisa" type="text">
+                        </td>
+                        <td>
+                            <button style="display: flex; background: transparent; border: none;" class="btn btn-primary"  type="submit"><img src="../images/search.png" alt="" srcset=""></button>
+                        </td>
                     </form>
                 </td>
             </tr>
