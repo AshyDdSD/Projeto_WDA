@@ -61,92 +61,68 @@ $alu_top3 = $top3['mais_alug'];
   <title>Locadora WDA</title>
   <style>
     #graf-gran {
-    position: absolute;
-    float: left;
-    display: block;
-    max-width: 100%;
-  }
-
-  #graf-peq {
-    position: absolute;
-    margin-top: 50vh;
-    float: left;
-    display: block;
-  }
-
-  .graf1 {
-    float: left;
-    background: white;
-    margin-left: 13vh;
-    height: 350px;
-    width: 600px;
-    border-radius: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  }
-
-  .graf2 {
-    float: right;
-    background: white;
-    margin-left: 15vh;
-    height: 350px;
-    width: 600px;
-    border-radius: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  }
-
-  .divt2 {
-    float: left;
-    background: white;
-    margin-top: 40px;
-    margin-left: 6vh;
-    margin-bottom: 5vh;
-    height: 240px;
-    width: 200px;
-    border-radius: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-  }
-
-  @media only screen and (max-width: 800px) {
-
-    #graf-gran,
-    #graf-peq {
-      float: left;
-      position: absolute;
-      width: 100%;
-      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    .graf1 {
-      position: absolute;
-      height: 280px;
-      width: 90%;
-      top: 10px;
-      left: -19%;
-      padding: 1%;
-      color: #fff;
-      overflow-x: hidden;
-    }
-
+    .graf1,
     .graf2 {
-      position: absolute;
-      height: 280px;
-      width: 90%;
-      margin-top: 90%;
-      left: -22%;
-      padding: 5%;
-      color: #fff;
-      overflow-x: hidden;
-    }
-
-    #trof {
-      margin-top: 77%;
+      background: white;
+      height: 350px;
+      width: 600px;
+      border-radius: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+      margin: 10px;
     }
 
     .divt2 {
-      margin-top: -5%;
-      margin-left: 30%;
+      float: left;
+      background: white;
+      margin-top: 40px;
+      margin-left: 6vh;
+      margin-bottom: 5vh;
+      height: 240px;
+      width: 200px;
+      border-radius: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     }
-  }
+
+    @media only screen and (max-width: 800px) {
+
+      .graf1,
+      .graf2 {
+        height: 280px;
+        width: 90%;
+      }
+
+      #trof {
+        margin-top: 10%;
+      }
+
+      .divt2 {
+        margin-top: 2%;
+        margin-left: 40%;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .graf1,
+      .graf2 {
+        width: 100%;
+      }
+
+      #trof {
+        margin-top: 10%;
+      }
+
+      .divt2 {
+        margin-top: 2%;
+        margin-left: 25%;
+      }
+    }
   </style>
 
 </head>
@@ -217,8 +193,8 @@ $alu_top3 = $top3['mais_alug'];
     </div>
 
     <div class="divt2">
-      <img style="margin-left: 17%; margin-right: 30%;margin-top: 3%;margin-bottom: 10px;" src="../images/to-do-list.png"
-        alt="">
+      <img style="margin-left: 17%; margin-right: 30%;margin-top: 3%;margin-bottom: 10px;"
+        src="../images/to-do-list.png" alt="">
       <p style="text-align: center">Aluguéis ativos: </p>
       <p style="text-align: center">
         <?php echo $row4['ativo']; ?>

@@ -40,7 +40,8 @@
 						</div>
 						<div class="input_field">
 							<label for="telefone">Telefone</label>
-							<input type="text" name="telefone" id="cel" placeholder="Telefone" maxlength="15" autocomplete="off" onkeyup="mascara_cel()" >
+							<input type="text" name="telefone" id="cel" placeholder="Telefone" maxlength="15"
+								autocomplete="off" onkeypress="telefone('(##) #####-####',this)">
 							<div class="error-message" id="celular-error"></div>
 						</div>
 						<div class="input_field">
@@ -90,16 +91,14 @@
 			}
 
 		});
-		function cel() {
-			var cel = document.getElementById('cel')
-			if (cel.value.length == 1) {
-				cel.value = "(" + cel.value
-			}
-			else if (cel.value.length == 3) {
-				cel.value += ") "
-			}
-			else if (cel.value.length == 10) {
-				cel.value += "-"
+		function telefone(mascara, documento) {
+			let i = documento.value.length;
+			let saida = '#';
+			let texto = mascara.substring(i);
+			while (texto.substring(0, 1) != saida && texto.length) {
+				documento.value += texto.substring(0, 1);
+				i++;
+				texto = mascara.substring(i);
 			}
 		}
 	</script>
