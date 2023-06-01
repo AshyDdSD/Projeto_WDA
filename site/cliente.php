@@ -43,8 +43,8 @@
         <h4 class="assunto">Clientes</h4>
         <table id="tsup">
             <tr>
-                <td><a class="btn btn-primary" style="border-radius: 30px;" href="../cad/cad_cli.php" role="button">Novo
-                        +</a></td>
+                <td><a class="btn btn-primary" style="border-radius: 30px;" href="../cad/cad_cli.php" role="button">Novo +</a></td>
+                <td></td>
                 <td></td>
                 <td>
                     <form action="">
